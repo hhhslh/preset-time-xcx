@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="date" wx:for="{{showDay.extend.dayTimeAllow}}" wx:key=""
+ bindtap="clickDay" class="{{item.selected ? 'selected':''}}" data-index="{{index}}">
+  <view>{{item.day}}</view>
+</view>
+<view class="time" wx:for="{{timeBox}}" wx:key="" bindtap="clickTime" class="{{item.allow==1 ? 'selected':''}}" data-allow="{{item.allow}}" data-index="{{index}}">
+  <view>{{item.time}}</view>
+</view>
+  
